@@ -137,7 +137,7 @@ section h2 {
 
 /* Estilos para el formulario */
 
-/* Estilos para centrar y ajustar el formulario en "Solicitud de Servicio" */
+/* Estilo para el formulario en "Solicitud de Servicio" */
 #solicitud-servicio .form-container {
     display: flex;
     flex-direction: column;
@@ -147,7 +147,7 @@ section h2 {
     padding: 10px; /* Agrega relleno alrededor del formulario */
     border-radius: 10px; /* Agrega un borde redondeado al formulario */
     align-items: stretch;
-    background: rgba(0, 0, 0, 0.7);; /* Fondo semitransparente */
+    background: rgba(0, 0, 0, 0.7);
 }
 
 #solicitud-servicio .form-group {
@@ -204,7 +204,7 @@ section h2 {
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s;
-    font-size: 1em; /* Tamaño de letra igual para ambos */
+    font-size: 1em;
 }
 
 .form-buttons a:hover,
@@ -244,6 +244,5 @@ h2 {
     color: #0074e4; 
     font-size: 40px;
 }
-
 
 /* Fin actividad 4 */
