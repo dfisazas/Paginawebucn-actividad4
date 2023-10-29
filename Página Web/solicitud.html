@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Solicitud de Servicio</title>
+</head>
+<body>
+    <h2>Solicitud de Servicio</h2>
+
+    <div id="table-container">
+        <table>
+            <tr>
+                <th>Nombres y Apellidos del cliente:</th>
+                <td id="nombre"></td>
+            </tr>
+            <tr>
+                <th>Correo electrónico:</th>
+                <td id="correo"></td>
+            </tr>
+            <tr>
+                <th>Número de celular:</th>
+                <td id="celular"></td>
+            </tr>
+            <tr>
+                <th>Servicio solicitado:</th>
+                <td id="servicio"></td>
+            </tr>
+        </table>
+    </div>
+
+    <!-- Script para obtener los parámetros de la URL y mostrarlos en la tabla -->
+    <script>
+        var urlParams = new URLSearchParams(window.location.search);
+        document.getElementById("nombre").textContent = urlParams.get("nombre");
+        document.getElementById("correo").textContent = urlParams.get("correo");
+        document.getElementById("celular").textContent = urlParams.get("celular");
+        document.getElementById("servicio").textContent = urlParams.get("servicio");
+    </script>
+</body>
+</html>
